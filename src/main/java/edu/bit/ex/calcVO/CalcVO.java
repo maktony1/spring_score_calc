@@ -47,7 +47,6 @@ public class CalcVO {
 	}
 	
 	public double getTotal() {
-		
 		return (kor+eng+math);
 	}
 	

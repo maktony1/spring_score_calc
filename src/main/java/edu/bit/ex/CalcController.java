@@ -33,6 +33,8 @@ public class CalcController {
 		logger.info("calcvo MATH:"+calcvo.getMath());
 		logger.info("calcvo Total:"+calcvo.getTotal());
 		logger.info("getTotal");
+		
+		
 		return calcvo.getTotal();
 	}
 }

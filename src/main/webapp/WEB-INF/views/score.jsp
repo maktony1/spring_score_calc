@@ -50,7 +50,20 @@
 			            dataType:"json",
 			            success : function(result){
 			            	console.log("success : function --> " + result);
+			            	console.log(result);
 							$("#result").text(result);
+							
+							if(result>=90){
+								$("#results").text("수");
+							}else if(result>=80){
+								$("#results").text("우");
+							}else if(result>=70){
+								$("#results").text("미");
+							}else if(result>=60){
+								$("#results").text("양");
+							}else{
+								$("#results").text("가");
+							}
 			            },
 			            error : function(request,status,error){
 			                alert("통신실패");
@@ -63,6 +76,7 @@
 			</script>
 			
 			<div id="result"></div>
+			<div id="results"></div>
 			
 		</div>
 	</body>
